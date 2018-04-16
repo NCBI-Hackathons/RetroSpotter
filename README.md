@@ -18,3 +18,11 @@ Hopefully this will allow us to detect and look at the expression of this CNV.
 * Output: Diffential expression plots
 
 ![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
+
+## To Do:
+
+* Decide on dataset(s) and collect data.
+* Download and setup any needed tools.
+* Code!
+* Make plots.
+* Test
