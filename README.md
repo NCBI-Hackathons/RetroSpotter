@@ -16,3 +16,5 @@ Hopefully this will allow us to detect and look at the expression of this CNV.
 * Input: data from SRA and gene name
 
 * Output: Diffential expression plots
+
+![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
