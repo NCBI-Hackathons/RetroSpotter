@@ -36,7 +36,7 @@
 
 ![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
 
-![alt text]https://github.com/NCBI-Hackathons/SVRNA/blob/joseph/figs/pipeline2.png
+![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/joseph/figs/pipeline2.png)
 
 ## People/Team
 
