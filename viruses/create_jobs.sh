@@ -67,6 +67,7 @@ for i in $( cat $ACC_FILE ); do
 
 done
 
+sem --wait
 
 
 
