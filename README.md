@@ -5,12 +5,17 @@
 * We can look for these SNPs in RNA Seq data and therefore find the duplications.
 
 
-
-
 ## What's the problem ?
 
 
-Copy Number Variations (CNVs) are the cause of a number of human disease. Any tool which aids the discovery of CNVs would be of great use.
+* Copy Number Variations (CNVs) are the cause of a number of human disease. Any tool which aids the discovery of CNVs would be of great use.
+
+
+* How do we find the SNPS associated with duplications and CNVs? There are 3 options:
+
+1) Possible we can use dbDNV - a database of SNPs associated with gene duplications
+2) Try looking at 1000 genome data - to do.
+3) Curated SNPs e.g. Tryptase locus
 
 
 ## What is INSERT NAME ?
@@ -21,7 +26,7 @@ Copy Number Variations (CNVs) are the cause of a number of human disease. Any to
 
 
 
-## Draft Pipeline
+## Pipeline
 
 * Use SNPs and RNA Seq data to find possible duplications.
 
@@ -31,11 +36,14 @@ Copy Number Variations (CNVs) are the cause of a number of human disease. Any to
 
 ![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
 
-
+![alt text]https://github.com/NCBI-Hackathons/SVRNA/blob/joseph/figs/pipeline2.png
 
 ## People/Team
 
 Ian Taukulis
+
 Jozef Madzo
+
 Xiaoyu Zhai
+
 Joseph Halstead
