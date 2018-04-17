@@ -1,15 +1,51 @@
-# Differential Expression of Copy Number Variation (CNVS) from RNA Seq
+# RNA-Dup-Finder
 
-Using data from the SRA to look for CNVs in RNASeq Data.
+* Finding gene duplications in RNA Seq is not normally possible. However sometimes a specific duplication is associated with particular SNPs.
 
-Use the fact that certain SNPS are associated with a particilar duplication.
-
-Look at the proportion of reads with a SNP and without SNP.
-
-Hopefully this will allow us to detect and look at the expression of this CNV.
+* We can look for these SNPs in RNA Seq data and therefore find the duplications.
 
 
-## Draft Pipeline
+## What's the problem ?
+
+
+* Copy Number Variations (CNVs) are the cause of a number of human disease. Any tool which aids the discovery of CNVs would be of great use.
+
+
+* How do we find the SNPS associated with duplications and CNVs? There are 3 options:
+
+	1) Possible we can use dbDNV - a database of SNPs associated with gene duplications.
+	2) Try looking at 1000 genome data - to do.
+	3) Curated SNPs e.g. Tryptase locus.
+
+
+## What is INSERT NAME ?
+
+
+
+## How to use INSERT NAME ?
+
+How to run the software
+
+### Install Instructions
+
+
+#### Requirements
+
+
+##### Software
+
+* python3
+* magicblast
+
+##### Python Libraries
+
+* pysam
+* bipython
+
+### Running the application
+
+
+## Pipeline
 
 * Use SNPs and RNA Seq data to find possible duplications.
 
@@ -17,12 +53,27 @@ Hopefully this will allow us to detect and look at the expression of this CNV.
 
 * Output: Diffential expression plots
 
+### Day 1
+
 ![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
 
-## To Do:
+### Day 2
 
-* Decide on dataset(s) and collect data.
-* Download and setup any needed tools.
-* Code!
-* Make plots.
-* Test
+![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/joseph/figs/pipeline2.png)
+
+## People/Team
+
+Ian Taukulis
+
+Jozef Madzo
+
+Xiaoyu Zhai
+
+Joseph Halstead
+
+## References
+
+
+* https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21097891/
+
+
