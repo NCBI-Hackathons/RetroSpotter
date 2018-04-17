@@ -1,12 +1,24 @@
 # Differential Expression of Copy Number Variation (CNVS) from RNA Seq
 
-Using data from the SRA to look for CNVs in RNASeq Data.
+* Finding gene duplications in RNA Seq is normally not possible. However certain duplications are associated with particular SNPs.
 
-Use the fact that certain SNPS are associated with a particilar duplication.
+* We can look for these SNPs in RNA Seq data and therefore find the duplications.
 
-Look at the proportion of reads with a SNP and without SNP.
 
-Hopefully this will allow us to detect and look at the expression of this CNV.
+
+
+## What's the problem ?
+
+
+Copy Number Variations (CNVs) are the cause of a number of human disease. Any tool which aids the discovery of CNVs would be of great use.
+
+
+## What is INSERT NAME ?
+
+
+
+## How to use INSERT NAME ?
+
 
 
 ## Draft Pipeline
@@ -19,10 +31,11 @@ Hopefully this will allow us to detect and look at the expression of this CNV.
 
 ![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
 
-## To Do:
 
-* Decide on dataset(s) and collect data.
-* Download and setup any needed tools.
-* Code!
-* Make plots.
-* Test
+
+## People/Team
+
+Ian Taukulis
+Jozef Madzo
+Xiaoyu Zhai
+Joseph Halstead
