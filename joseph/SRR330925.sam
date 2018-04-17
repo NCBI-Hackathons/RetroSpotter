@@ -1,0 +1,4 @@
+@HD	VN:1.0	GO:query
+@SQ	SN:1	LN:1878
+@PG	ID:magicblast	PN:magicblast	CL:/Users/Joseph/Documents/HackathonApr18/apps/ncbi-magicblast/bin/magicblast -sra SRR330925 -db myblastdb -no_unaligned -out SRR330925.sam 
+SRR330925.1138764	0	1	1003	255	20M16S	*	0	0	GGGGCGATGTGGACAATGATATCTCGTATGCCGTCT	*	NH:i:1	AS:i:20	NM:i:0

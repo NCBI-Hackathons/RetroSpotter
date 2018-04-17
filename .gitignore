@@ -1,1 +1,10 @@
 .DS_Store
+*.bam
+*.nhr
+*.nog
+*.nin
+*.nsd
+*.nsi
+*.nsq
+*.bai
+*.fai
