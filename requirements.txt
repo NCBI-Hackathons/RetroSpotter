@@ -1,4 +1,6 @@
 pysam
 pandas
-pyfaidx
+biopython
+seaboard
+numpy
 

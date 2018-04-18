@@ -11,7 +11,7 @@ The human genome has many Human Endogenous Retroviruses (HERs) located within it
 We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 
-### Install Instructions
+## Install Instructions
 
 
 #### Requirements
