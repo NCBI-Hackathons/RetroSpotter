@@ -63,7 +63,7 @@ for i in $( cat $ACC_FILE ); do
 
   echo $i
 
-  sem -j +0 magicblast -db $BLAST_DB -sra $i -no_unaligned -num_threads $THREADS -out $OUT_DIR/$COMMENT.$i.sam 
+  sem -j +0 ../../../applications/ncbi-magicblast-1.3.0/bin/magicblast -db $BLAST_DB -sra $i -no_unaligned -num_threads $THREADS -out $OUT_DIR/$COMMENT.$i.sam 
 
 done
 
