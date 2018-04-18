@@ -17,11 +17,11 @@ try:
     column = sys.argv[1]-1
     rsNumber = {line.strip() for line in open(sys.argv[2])}
 
-    with open(sys.argv[column],"r") as geno_file:
+    with open(sys.argv[3],"r") as geno_file:
         for line in geno_file:
             item = line.strip().split('\t')
             try:
-                if item[2] in rsNumber:
+                if item[column] in rsNumber:
                     print(line, end="");
             except:
                 pass
