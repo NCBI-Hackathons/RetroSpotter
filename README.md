@@ -15,11 +15,7 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 ## How to use RetroSpotter ?
 
-* Create blast db of fasta
-* Align using magicblast
-* Count alignments per virus
-* Create dataframe
-* Create plots
+
 
 
 ### Install Instructions
@@ -46,6 +42,22 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 
 ## Pipeline
+
+* Create blast db of fasta
+* Align using magicblast
+* Count alignments per virus
+* Create dataframe
+* Create plots
+
+![pipeline](https://github.com/NCBI-Hackathons/RetroSpotter/blob/joseph/figs/pipelineday3.png)
+
+
+## Results
+
+![Barchart](https://github.com/NCBI-Hackathons/RetroSpotter/blob/joseph/figs/bar.png)
+
+
+
 
 
 ## People/Team
