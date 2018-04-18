@@ -56,7 +56,10 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 ### Visualise
 
-* Coming soon!
+``` jupyter notebook ```
+
+* navigate to make_plots notebook. Edit names of inout files. Run notebook to generate plots.
+
 
 ## Pipeline
 
