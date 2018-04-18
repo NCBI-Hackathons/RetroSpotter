@@ -94,7 +94,7 @@ The expression for a particular viral sequence. Compare between two datasets.
 
 ### PCA
 
-A Principle Component Analsysis (PCA) of the data. Clusters within the dataset become visible.
+A Principle Component Analsysis (PCA) of the data. Clusters within the dataset are visible.
 
 ![pca](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/pca3d.png)
 
@@ -107,7 +107,7 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 
 ## Further Work
 
-* Run again with better different controls set.
+* Run again with better control set.
 * Complete pipeline automation so that the results are reproducible.
 * Link up with metadata from SRA.
 * Improve reference sequence FASTA. Automate the collection of this.
