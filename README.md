@@ -77,11 +77,15 @@ The barchart below shows the difference in expression levels between an AML and 
 
 ### Count by Sample
 
-
+![sample](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/count_by_sample.png)
 
 ### PCA
 
+![pca](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/pca3d.png)
 
+### Heatmap
+
+![pca](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/heatmap.png)
 
 
 ## Further Work
