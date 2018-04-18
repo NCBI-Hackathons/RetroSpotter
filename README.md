@@ -115,13 +115,13 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 
 ## People/Team
 
-* Ian Taukulis
+* Ian Taukulis (Programmer)
 
-* Joseph Halstead
+* Joseph Halstead (Team Lead and Programmer)
 
-* Jozef Madzo
+* Jozef Madzo (Sys Admin and Programmer)
 
-* Xiaoyu Zhai
+* Xiaoyu Zhai (Writer and Programmer)
 
 
 
