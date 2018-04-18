@@ -83,6 +83,12 @@ The plot shows the sum of the normalised count on a per sample basis. This allow
 
 ![sample](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/count_by_sample.png)
 
+### Count by Sequence
+
+The expression for a particular viral sequence. Compare between two datasets.
+
+![counts](figs/average_expression_by_seq.png)
+
 ### PCA
 
 A Principle Component Analsysis (PCA) of the data. Clusters within the dataset become visible.
