@@ -1,4 +1,4 @@
-# Differential Expression of Copy Number Variation (CNVS) from RNA Seq
+# RNA-Dup-Finder
 
 * Finding gene duplications in RNA Seq is not normally possible. However sometimes a specific duplication is associated with particular SNPs.
 
