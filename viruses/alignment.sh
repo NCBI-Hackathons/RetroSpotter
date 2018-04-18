@@ -23,22 +23,9 @@ if [ -z "$4" ]
   then
     echo "No argument supplied"
     exit 1
-fi
 
 
 if [ -z "$5" ]
-  then
-    echo "No argument supplied"
-    exit 1
-fi
-
-if [ -z "$6" ]
-  then
-    echo "No argument supplied"
-    exit 1
-fi
-
-if [ -z "$7" ]
   then
     echo "No argument supplied"
     exit 1
@@ -51,9 +38,7 @@ ACC_FILE=$1 #File containg SRR accession numbers
 BLAST_DB=$2 #Blast database
 THREADS=$3 #Number of magic blast threads to use
 OUT_DIR=$4 #Where to put the results when job in run
-JOBS_DIR=$5 #Where to put the jobs
-TEMPLATE=$6 #The grid engine submit script template
-COMMENT=$7 #Short comment for file name
+COMMENT=$5 #Short comment for file name
 
 # clear and create jobs folder
 rm -rf $JOBS_DIR/
