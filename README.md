@@ -8,6 +8,8 @@
 The human genome has many Human Endogenous Retroviruses (HERs) located within it. It was been proposed that HERs play a role in disease. There is currently an unmet need for a tool that will allow the user to test for HER expression using RNA sequencing data. RetroSpotter allows the user to compare HER expression in two datasets (e.g. diseease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several informative plots.
 
 
+The tools makes it possible to examine a large quantity of sequencing projects for HERs by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HER genomes using magicblast.
+
 We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 
@@ -77,13 +79,19 @@ The barchart below shows the difference in expression levels between an AML and 
 
 ### Count by Sample
 
+The plot shows the sum of the normalised count on a per sample basis. This allows the user to spot samples with unusual expression.
+
 ![sample](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/count_by_sample.png)
 
 ### PCA
 
+A Principle Component Analsysis (PCA) of the data. Clusters within the dataset become visible.
+
 ![pca](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/pca3d.png)
 
 ### Heatmap
+
+A clustered heatmap. Samples with unusual HER expression are visible.
 
 ![pca](https://github.com/NCBI-Hackathons/RetroSpotter/blob/master/figs/heatmap.png)
 
