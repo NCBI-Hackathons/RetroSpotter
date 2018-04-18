@@ -1,32 +1,30 @@
-# RNA-Dup-Finder
+# RetroSpotter
 
-* Finding gene duplications in RNA Seq is not normally possible. However sometimes a specific duplication is associated with particular SNPs.
+* A computational pipeline for measuring the expression of Endogenous Retroviruses using publically available RNA Seq Data.
 
-* We can look for these SNPs in RNA Seq data and therefore find the duplications.
-
-
-## What's the problem ?
+* This project originally started as an attempt to measure structural variant expression in RNA Sequencing data. 
 
 
-* Copy Number Variations (CNVs) are the cause of a number of human disease. Any tool which aids the discovery of CNVs would be of great use.
+## What is RetroSpotter?
+
+The human genome has many Endogenous Retroviruses. It was been proposed that these Endogenous Retroviruses play a role in disease It would be great if we could analyse how the expression of these genetic elements differ in disease. RetroSpotter is a computational pipeline for achieving this.
 
 
-* How do we find the SNPS associated with duplications and CNVs? There are 3 options:
-
-	1) Possible we can use dbDNV - a database of SNPs associated with gene duplications.
-	2) Try looking at 1000 genome data - to do.
-	3) Curated SNPs e.g. Tryptase locus.
+We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 
-## What is INSERT NAME ?
+## How to use RetroSpotter ?
 
+* Create blast db of fasta
+* Align using magicblast
+* Count alignments per virus
+* Create dataframe
+* Create plots
 
-
-## How to use INSERT NAME ?
-
-How to run the software
 
 ### Install Instructions
+
+
 
 
 #### Requirements
@@ -40,26 +38,15 @@ How to run the software
 ##### Python Libraries
 
 * pysam
-* bipython
+* biopython
+* pandas
+* seaborn
 
 ### Running the application
 
 
 ## Pipeline
 
-* Use SNPs and RNA Seq data to find possible duplications.
-
-* Input: data from SRA and gene name
-
-* Output: Diffential expression plots
-
-### Day 1
-
-![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/master/figs/pipeline.png)
-
-### Day 2
-
-![alt text](https://github.com/NCBI-Hackathons/SVRNA/blob/joseph/figs/pipeline2.png)
 
 ## People/Team
 
@@ -72,8 +59,5 @@ Xiaoyu Zhai
 Joseph Halstead
 
 ## References
-
-
-* https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21097891/
 
 
