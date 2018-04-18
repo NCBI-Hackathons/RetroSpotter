@@ -46,7 +46,7 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 ### Analyse
 
-``` bash count_hits.sh $PATH_TO_RESULTS
+``` bash count_hits.sh $PATH_TO_RESULTS ``` 
 
 ``` jupyter notebook ```
 
