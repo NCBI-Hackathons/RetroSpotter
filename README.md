@@ -69,9 +69,19 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 ## Results
 
+### Differential Expression
+
 The barchart below shows the difference in expression levels between an AML and Geuvadis dataset. The Geuvadis dataset consists of cells that have been immortilised using the Epstein Barr Virus (EBV). There is some evidence that this process results in increased expression of Endogenous Retroviruses [1]. 
 
 ![Barchart](https://github.com/NCBI-Hackathons/RetroSpotter/blob/joseph/figs/bar.png)
+
+### Count by Sample
+
+
+
+### PCA
+
+
 
 
 ## Further Work
