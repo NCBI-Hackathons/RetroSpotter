@@ -8,3 +8,11 @@
 *.nsq
 *.bai
 *.fai
+*.sam
+all_control_repeats.txt
+all_datectec_sequencies.txt
+temp.txt
+*.csv
+viruses/spot_counts
+viruses/aml_results/
+viruses/control_results/
