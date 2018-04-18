@@ -1,2 +1,0 @@
-magicblast:/Users/Joseph/Documents/HackathonApr18/apps/ncbi-magicblast/bin/magicblast
-makeblastdb:/Users/Joseph/Documents/HackathonApr18/apps/ncbi-magicblast/bin/makeblastdb
