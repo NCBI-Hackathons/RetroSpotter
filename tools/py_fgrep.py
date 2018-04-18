@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 """
+
 when you try to grep the list of entries from big file >50 GB 
 grep use up too much virtual memmory and eventually crash...
 
-run py_fgerp.py column file bigFile   
+run py_fgerp.py column itemFile bigFile 
 
+   * column:   in which colum to search in bigFile
+   * itemFile: file with search items 
+   * bigFile:  file to search
 """
 
 import sys
