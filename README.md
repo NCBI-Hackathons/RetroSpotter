@@ -1,16 +1,16 @@
 # RetroSpotter
 
-* A computational pipeline for measuring the expression of Endogenous Retroviruses using publically available RNA Seq Data.
+* A computational pipeline for measuring the expression of Human Endogenous Retroviruses using publicly available RNA Seq Data.
 
 
 ## What is RetroSpotter?
 
-The human genome has many Human Endogenous Retroviruses (HERs) located within it. It was been proposed that HERs play a role in disease. There is currently an unmet need for a tool that will allow the user to test for HER expression using RNA sequencing data. RetroSpotter allows the user to compare HER expression in two datasets (e.g. diseease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several informative plots.
+The human genome has many Human Endogenous Retroviruses (HERs) located within it. It was been proposed that HERs play an important role in disease. There is currently an unmet need for a tool which allows the user to test for HER expression using RNA sequencing data. RetroSpotter allows the user to compare HER expression in two datasets (e.g. disease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several other informative plots.
 
 
-The tools makes it possible to measure HER expression in a large range of publically available datasets by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HER genomes using magicblast.
+The tools makes it possible to measure HER expression in a large range of publicly available datasets by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HER genomes using magicblast.
 
-We have tested RetroSpotter comparing AML and a Geuvadis dataset.
+We have tested RetroSpotter by comparing an AML and a Geuvadis dataset.
 
 
 ## Install Instructions
@@ -22,7 +22,7 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 ##### Software
 
 * python3
-* magicblast
+* magicblast (This should be in your path)
 * R
 
 ##### Python Libraries
@@ -31,28 +31,72 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 * biopython
 * pandas
 * seaborn
+* jupyter
 
 ## How to use RetroSpotter?
 
+Before running the pipline you must collect the following:
+
+1. A reference FASTA file containing the HER genomes you wish to align against. See viruses/reference_genomes/retroviruses.fasta for an example.
+2. Two SRR accession lists to compare. These can be collected from the [SRA](https://www.ncbi.nlm.nih.gov/sra) website.
+
 ### Setup
+
+#### Collect Code
 
 ``` git clone https://github.com/NCBI-Hackathons/RetroSpotter.git ```
 
-``` cd viruses ```
+``` cd RetroSpotter ```
 
-``` mkdir results ```
+#### Make Blast Database
 
-### Run magicblast alignments
+RetroSpotter requires a blast database to align against. This can be created by running the following:
 
-```  bash alignment.sh $accession_list_file $blast_database $num_cores $results_directory $comment ```
+``` bash viruses/makeblastdb  $REF_FASTA ```
+
+Where $REF_FASTA is the location of your reference genome FASTA. This is best stored in the viruses/reference_genomes directory.
+
+
+#### Run MagicBLast Alignment Jobs
+
+There are two options for completing the alignment process. Please note that this section should be run twice - once for each SRA accession list.
+Take care to give your JOBS_DIR and OUT_DIR a different name for each accession list you align.
+
+* If you have access to a Sun Grid Engine the jobs can be submitted using the run_jobs_qsub.sh script:
+
+``` bash viruses/run_jobs_qsub.sh $ACC_FILE $BLAST_DB $THREADS $OUT_DIR $JOBS_DIR $TEMPLATE $COMMENT ```
+
+Where:
+
+ACC_FILE =  The file containing the SRR accession numbers (See /viruses/accession_lists for an example)
+
+BLAST_DB =  The Blast database
+
+THREADS =  The number of magic blast threads to use
+
+OUT_DIR = The directory where your results should be placed
+
+JOBS_DIR = The directory to put the job scripts
+
+TEMPLATE = The grid engine submit script template (e.g. viruses/templates/grid_engine_template.txt)
+
+COMMENT = Short comment for file name e.g. control
+
+* Alternatively use the run_jobs.sh command:
+
+```  bash viruses/run_jobs.sh $ACC_FILE $BLAST_DB $THREADS $OUT_DIR $COMMENT```
 
 ### Analyse
 
-``` bash count_hits.sh $PATH_TO_RESULTS ``` 
+For each of the results folders run the following script.
+
+``` bash viruses/count_hits.sh $PATH_TO_RESULTS ```
+
+The open jupyter notebook:
 
 ``` jupyter notebook ```
 
-* navigate to create_csv notebook. Edit location of results to your folder. Run notebook to generate CSV and plots.
+* navigate to create_csv notebook. Edit location of results to your folder and reference fasta. Run notebook to generate CSV and plots.
 
 ### Visualise
 
@@ -76,7 +120,7 @@ We have tested RetroSpotter comparing AML and a Geuvadis dataset.
 
 ### Differential Expression
 
-The barchart below shows the difference in expression levels between an AML and Geuvadis dataset. The Geuvadis dataset consists of cells that have been immortilised using the Epstein Barr Virus (EBV). There is some evidence that this process results in increased expression of Endogenous Retroviruses [1]. 
+The barchart below shows the difference in expression levels between an AML and Geuvadis dataset. The Geuvadis dataset consists of cells that have been immortilised using the Epstein Barr Virus (EBV). There is some evidence that this process results in increased expression of Endogenous Retroviruses [1].
 
 ![Barchart](https://github.com/NCBI-Hackathons/RetroSpotter/blob/joseph/figs/bar.png)
 
@@ -122,8 +166,6 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 * Jozef Madzo (Sys Admin and Programmer)
 
 * Xiaoyu Zhai (Writer and Programmer)
-
-
 
 ## References
 

@@ -16,3 +16,5 @@ temp.txt
 viruses/spot_counts
 viruses/aml_results/
 viruses/control_results/
+*results/
+*jobs/

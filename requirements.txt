@@ -1,6 +1,6 @@
 pysam
 pandas
 biopython
-seaboard
+seaborn
 numpy
-
+jupyter
