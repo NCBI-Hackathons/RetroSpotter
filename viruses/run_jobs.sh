@@ -23,7 +23,7 @@ if [ -z "$4" ]
   then
     echo "No argument supplied"
     exit 1
-
+fi
 
 if [ -z "$5" ]
   then
@@ -38,15 +38,14 @@ THREADS=$3 #Number of magic blast threads to use
 OUT_DIR=$4 #Where to put the results when job in run
 COMMENT=$5 #Short comment for file name
 
-# clear and create jobs folder
-rm -rf $JOBS_DIR/
-mkdir $JOBS_DIR/
+mkdir $OUT_DIR
+
 
 # run jobs
 for i in $( cat $ACC_FILE ); do
 
   echo $i
 
-  echo magicblast -db $BLAST_DB -sra $i -no_unaligned -num_threads $THREADS -out $OUT_DIR/$COMMENT.$i.sam
+  magicblast -db $BLAST_DB -sra $i -no_unaligned -num_threads $THREADS -out $OUT_DIR/$COMMENT.$i.sam
 
 done
