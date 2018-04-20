@@ -27,7 +27,6 @@ We have tested RetroSpotter by comparing an AML and a Geuvadis dataset.
 
 ##### Python Libraries
 
-* pysam
 * biopython
 * pandas
 * seaborn
@@ -35,7 +34,7 @@ We have tested RetroSpotter by comparing an AML and a Geuvadis dataset.
 
 ## How to use RetroSpotter?
 
-Before running the pipline you must collect the following:
+Before running the pipeline you must collect the following:
 
 1. A reference FASTA file containing the HER genomes you wish to align against. See viruses/reference_genomes/retroviruses.fasta for an example.
 2. Two SRR accession lists to compare. These can be collected from the [SRA](https://www.ncbi.nlm.nih.gov/sra) website.
@@ -102,7 +101,7 @@ The open jupyter notebook:
 
 ``` jupyter notebook ```
 
-* navigate to make_plots notebook. Edit names of inout files. Run notebook to generate plots.
+* navigate to make_plots notebook. Edit the names of input files e.g. results folders and fasta location. Run the notebook to generate plots.
 
 
 ## Pipeline
