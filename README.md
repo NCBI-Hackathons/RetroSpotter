@@ -51,7 +51,7 @@ Before running the pipeline you must collect the following:
 
 RetroSpotter requires a blast database to align against. This can be created by running the following:
 
-``` bash viruses/makeblastdb  $REF_FASTA ```
+``` bash viruses/makeblastdb.sh  $REF_FASTA ```
 
 Where $REF_FASTA is the location of your reference genome FASTA. This is best stored in the viruses/reference_genomes directory.
 
@@ -151,9 +151,9 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 ## Further Work
 
 * Run again with better control set.
+* Improve Reference HER set! Currently some stuff in there that doesn't fit.
 * Complete pipeline automation so that the results are reproducible.
 * Link up with metadata from SRA.
-* Improve reference sequence FASTA. Automate the collection of this.
 
 
 ## People/Team
@@ -165,6 +165,8 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 * Jozef Madzo (Sys Admin and Programmer)
 
 * Xiaoyu Zhai (Writer and Programmer)
+
+* Olaitan I. Awe (Writer and Programmer)
 
 ## References
 
