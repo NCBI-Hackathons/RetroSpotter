@@ -74,7 +74,7 @@ for i in $JOBS_DIR/*.sh; do
 
   sleep 0.1 #So that the reciever doesn't get overwhelmed
   echo "submitting job $i"
-  echo qsub $i
+  qsub $i
   echo "----------------"
 
 done

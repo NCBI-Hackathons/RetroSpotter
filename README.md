@@ -10,7 +10,7 @@ The human genome has many Human Endogenous Retroviruses (HERs) located within it
 
 The tools makes it possible to measure HER expression in a large range of publicly available datasets by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HER genomes using magicblast.
 
-We have tested RetroSpotter by comparing an AML and a Geuvadis dataset.
+We have tested RetroSpotter by comparing an AML and a Geuvadis datasets.
 
 
 ## Install Instructions
