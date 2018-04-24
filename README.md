@@ -23,7 +23,7 @@ We have tested RetroSpotter by comparing an AML and a Geuvadis datasets.
 
 * python3
 * magicblast (This should be in your path)
-* R
+* R (rstudio)
 
 ##### Python Libraries
 
