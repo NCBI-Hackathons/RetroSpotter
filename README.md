@@ -2,7 +2,6 @@
 
 * A computational pipeline for measuring the expression of Human Endogenous Retroviruses using publicly available RNA Seq Data.
 
-
 ## What is RetroSpotter?
 
 The human genome has many Human Endogenous Retroviruses (HERs) located within it. It was been proposed that HERs play an important role in disease. There is currently an unmet need for a tool which allows the user to test for HER expression using RNA sequencing data. RetroSpotter allows the user to compare HER expression in two datasets (e.g. disease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several other informative plots.
