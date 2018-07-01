@@ -150,22 +150,24 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 ## Further Work
 
 * Run again with better control set.
-* Improve Reference HER set! Currently some stuff in there that doesn't fit.
+* Improve Reference HERV set! Currently some stuff in there that doesn't fit.
 * Complete pipeline automation so that the results are reproducible.
 * Link up with metadata from SRA.
 
 
 ## People/Team
 
-* Ian Taukulis (Programmer)
+* Olaitan I. Awe (Programmer, Writer and Project Maintainer)
 
 * Joseph Halstead (Team Lead and Programmer)
+
+* Ian Taukulis (Programmer)
 
 * Jozef Madzo (Sys Admin and Programmer)
 
 * Xiaoyu Zhai (Writer and Programmer)
 
-* Olaitan I. Awe (Writer and Programmer)
+* Ben Busby (Resources)
 
 ## References
 
