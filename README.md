@@ -4,10 +4,10 @@
 
 ## What is RetroSpotter?
 
-The human genome has many Human Endogenous Retroviruses (HERs) located within it. It was been proposed that HERs play an important role in disease. There is currently an unmet need for a tool which allows the user to test for HER expression using RNA sequencing data. RetroSpotter allows the user to compare HER expression in two datasets (e.g. disease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several other informative plots.
+The human genome has many Human Endogenous Retroviruses (HERVs) located within it. It was been proposed that HERVs play an important role in disease. There is currently an unmet need for a tool which allows the user to test for HERV expression using RNA sequencing data. RetroSpotter allows the user to compare HERV expression in two datasets (e.g. disease and control). The tool outputs a CSV file that allows downstream analysis as well as automatically generating several other informative plots.
 
 
-The tools makes it possible to measure HER expression in a large range of publicly available datasets by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HER genomes using magicblast.
+The tools makes it possible to measure HERV expression in a large range of publicly available datasets by streaming data from the SRA. The user provides a list of SRA accessions which RetroSpotter then aligns to a reference FASTA of HERV genomes using magicblast.
 
 We have tested RetroSpotter by comparing an AML and a Geuvadis datasets.
 
@@ -150,7 +150,7 @@ A clustered heatmap. Samples with unusual HER expression are visible.
 ## Further Work
 
 * Run again with better control set.
-* Improve Reference HERV set! Currently some stuff in there that doesn't fit.
+* Improve HERV Reference genome! Currently some strains in there that doesn't fit well.
 * Complete pipeline automation so that the results are reproducible.
 * Link up with metadata from SRA.
 
